@@ -12,7 +12,7 @@ def turn(board)
   input = gets.strip # I'm getting a users input 
   index = input_to_index(input)
 
-  if valid_move?(board, index) # if I comment this method out, I get a completely diff error
+  if valid_move?(board, index) 
     puts "Valid Move"
     move(board, index)
     display_board(board)
